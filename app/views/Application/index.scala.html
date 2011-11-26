@@ -1,0 +1,10 @@
+@(title:String, items: Seq[minerals.Mineral])
+
+@main(title) {
+    
+    <ul>
+    	@for( mineral <- items) {
+    		<li>@mineral.name @controllers.Application.render(mineral.formula)</li>
+    	}
+    </ul>
+}
