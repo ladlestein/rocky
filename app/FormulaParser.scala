@@ -32,7 +32,7 @@ case class Formula(terms: List[QuantifiedTerm], waterQuantity: Int = 0) {
   def complexity = terms.length
 }
 
-class FormulaParser extends RegexParsers {
+trait FormulaParser extends RegexParsers {
 
   val INT = """[1-9][0-9]*"""r
 

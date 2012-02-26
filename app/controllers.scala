@@ -5,15 +5,11 @@ import play.mvc._
 import minerals._
 import play.templates.Html
 
-object Application extends Controller with ImportFileParserComponent {
+object Application extends Controller {
     
     import views.Application._
     
-    val parser = new ImportFileParser
-    val inputfilename = Play.configuration.getProperty("inputfilename")
-    val inputfile = scala.io.Source.fromFile(new java.io.File(inputfilename))
-    val minerals = parser.read ( inputfile ).toSeq.sortBy(x => (x.formula.terms.length))
-    
+
     def index = {
         html.index("Your Scala application is ready!", minerals)
     }
