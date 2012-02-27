@@ -21,15 +21,31 @@ object Elements {
 
 }
 
-case class Element(symbol: String)
-case class ElementalTerm(element: Element, oxidationNumber: Option[Int] = None) extends Term
-case class SubsitutionGroup(terms: List[Term]) extends Term
-case class FunctionalGroup(terms: List[QuantifiedTerm]) extends Term
-abstract class Term
+trait Stoichiometry {
+    def complexity: Double
+}
 
-case class QuantifiedTerm(term: Term, quantity: Int = 1)
+case class Element(symbol: String)
+case class ElementalTerm(element: Element, oxidationNumber: Option[Int] = None) extends Term {
+    val complexity = 1.0
+}
+case class SubsitutionGroup(terms: List[Term]) extends Term{
+    val complexity = (terms :\ 0.0) ((term:Stoichiometry, max:Double) => scala.math.max(term.complexity, max))
+}
+case class FunctionalGroup(terms: List[QuantifiedTerm]) extends Term{
+    val complexity = (terms :\ 0.0) ((term:Stoichiometry, sum:Double) => sum + term.complexity)
+}
+
+trait Term extends Stoichiometry
+
+case class QuantifiedTerm(term: Term, quantity: Double = 1) extends Stoichiometry{
+    def complexity = term.complexity * (if (quantity == 1) {1} else {scala.math.sqrt(quantity)})
+}
+
 case class Formula(terms: List[QuantifiedTerm], waterQuantity: Int = 0) {
-  def complexity = terms.length
+    val termComplexity = (terms :\ 0.0) ((term:Stoichiometry, sum:Double) => sum + term.complexity)
+    val waterComplexity = if (waterQuantity == 1) {1} else {scala.math.sqrt(waterQuantity)}
+    val complexity = termComplexity + waterComplexity
 }
 
 trait FormulaParser extends RegexParsers {
@@ -70,7 +86,7 @@ trait FormulaParser extends RegexParsers {
   def term: Parser[Term] = elementalTerm | substitutionGroup | functionalGroup
 
   def quantifiedTerm: Parser[QuantifiedTerm] = (term ~ (quantifier ?)) ^^ {
-    case t ~ q => QuantifiedTerm(t, q.getOrElse(1))
+    case t ~ q => QuantifiedTerm(t, q.getOrElse(1).asInstanceOf[Double])
   }
 
   def molecularWater = "·" ~> INT <~ "H_2_O" ^^ {

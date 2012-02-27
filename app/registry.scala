@@ -1,8 +1,5 @@
 package minerals
 
-import minerals.{RealChemistryComponent, RealMineralDatabaseComponent}
-
-
 /**
  * Created by IntelliJ IDEA.
  * User: larry
@@ -19,6 +16,10 @@ object real extends stuff
     with RealMineralDatabaseComponent
     with RealChemistryComponent
     with RealConfigurationComponent
+    with RealCrystallographyComponent {
+
+}
+
 
 
 

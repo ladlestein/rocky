@@ -1,232 +1,1612 @@
 [
-{ group: 1 order: 1 }
-{ group: 2 order: 2 }
-{ group: 3 order: 2 }
-{ group: 4 order: 2 }
-{ group: 5 order: 4 }
-{ group: 6 order: 2 }
-{ group: 7 order: 2 }
-{ group: 8 order: 4 }
-{ group: 9 order: 4 }
-{ group: 10 order: 4 }
-{ group: 11 order: 4 }
-{ group: 12 order: 8 }
-{ group: 13 order: 4 }
-{ group: 14 order: 4 }
-{ group: 15 order: 8 }
-{ group: 16 order: 4 }
-{ group: 17 order: 4 }
-{ group: 18 order: 4 }
-{ group: 19 order: 4 }
-{ group: 20 order: 8 }
-{ group: 21 order: 8 }
-{ group: 22 order: 16 }
-{ group: 23 order: 8 }
-{ group: 24 order: 8 }
-{ group: 25 order: 4 }
-{ group: 26 order: 4 }
-{ group: 27 order: 4 }
-{ group: 28 order: 4 }
-{ group: 29 order: 4 }
-{ group: 30 order: 4 }
-{ group: 31 order: 4 }
-{ group: 32 order: 4 }
-{ group: 33 order: 4 }
-{ group: 34 order: 4 }
-{ group: 35 order: 8 }
-{ group: 36 order: 8 }
-{ group: 37 order: 8 }
-{ group: 38 order: 8 }
-{ group: 39 order: 8 }
-{ group: 40 order: 8 }
-{ group: 41 order: 8 }
-{ group: 42 order: 16 }
-{ group: 43 order: 16 }
-{ group: 44 order: 8 }
-{ group: 45 order: 8 }
-{ group: 46 order: 8 }
-{ group: 47 order: 8 }
-{ group: 48 order: 8 }
-{ group: 49 order: 8 }
-{ group: 50 order: 8 }
-{ group: 51 order: 8 }
-{ group: 52 order: 8 }
-{ group: 53 order: 8 }
-{ group: 54 order: 8 }
-{ group: 55 order: 8 }
-{ group: 56 order: 8 }
-{ group: 57 order: 8 }
-{ group: 58 order: 8 }
-{ group: 59 order: 8 }
-{ group: 60 order: 8 }
-{ group: 61 order: 8 }
-{ group: 62 order: 8 }
-{ group: 63 order: 16 }
-{ group: 64 order: 16 }
-{ group: 65 order: 16 }
-{ group: 66 order: 16 }
-{ group: 67 order: 16 }
-{ group: 68 order: 16 }
-{ group: 69 order: 32 }
-{ group: 70 order: 32 }
-{ group: 71 order: 16 }
-{ group: 72 order: 16 }
-{ group: 73 order: 16 }
-{ group: 74 order: 16 }
-{ group: 75 order: 4 }
-{ group: 76 order: 4 }
-{ group: 77 order: 4 }
-{ group: 78 order: 4 }
-{ group: 79 order: 8 }
-{ group: 80 order: 8 }
-{ group: 81 order: 4 }
-{ group: 82 order: 8 }
-{ group: 83 order: 8 }
-{ group: 84 order: 8 }
-{ group: 85 order: 8 }
-{ group: 86 order: 8 }
-{ group: 87 order: 16 }
-{ group: 88 order: 16 }
-{ group: 89 order: 8 }
-{ group: 90 order: 8 }
-{ group: 91 order: 8 }
-{ group: 92 order: 8 }
-{ group: 93 order: 8 }
-{ group: 94 order: 8 }
-{ group: 95 order: 8 }
-{ group: 96 order: 8 }
-{ group: 97 order: 16 }
-{ group: 98 order: 16 }
-{ group: 99 order: 8 }
-{ group: 100 order: 8 }
-{ group: 101 order: 8 }
-{ group: 102 order: 8 }
-{ group: 103 order: 8 }
-{ group: 104 order: 8 }
-{ group: 105 order: 8 }
-{ group: 106 order: 8 }
-{ group: 107 order: 16 }
-{ group: 108 order: 16 }
-{ group: 109 order: 16 }
-{ group: 110 order: 16 }
-{ group: 111 order: 8 }
-{ group: 112 order: 8 }
-{ group: 113 order: 8 }
-{ group: 114 order: 8 }
-{ group: 115 order: 8 }
-{ group: 116 order: 8 }
-{ group: 117 order: 8 }
-{ group: 118 order: 8 }
-{ group: 119 order: 16 }
-{ group: 120 order: 16 }
-{ group: 121 order: 16 }
-{ group: 122 order: 16 }
-{ group: 123 order: 16 }
-{ group: 124 order: 16 }
-{ group: 125 order: 16 }
-{ group: 126 order: 16 }
-{ group: 127 order: 16 }
-{ group: 128 order: 16 }
-{ group: 129 order: 16 }
-{ group: 130 order: 16 }
-{ group: 131 order: 16 }
-{ group: 132 order: 16 }
-{ group: 133 order: 16 }
-{ group: 134 order: 16 }
-{ group: 135 order: 16 }
-{ group: 136 order: 16 }
-{ group: 137 order: 16 }
-{ group: 138 order: 16 }
-{ group: 139 order: 32 }
-{ group: 140 order: 32 }
-{ group: 141 order: 32 }
-{ group: 142 order: 32 }
-{ group: 143 order: 3 }
-{ group: 144 order: 3 }
-{ group: 145 order: 3 }
-{ group: 146 order: 9 }
-{ group: 147 order: 6 }
-{ group: 148 order: 18 }
-{ group: 149 order: 6 }
-{ group: 150 order: 6 }
-{ group: 151 order: 6 }
-{ group: 152 order: 6 }
-{ group: 153 order: 6 }
-{ group: 154 order: 6 }
-{ group: 155 order: 18 }
-{ group: 156 order: 6 }
-{ group: 157 order: 6 }
-{ group: 158 order: 6 }
-{ group: 159 order: 6 }
-{ group: 160 order: 18 }
-{ group: 161 order: 18 }
-{ group: 162 order: 12 }
-{ group: 163 order: 12 }
-{ group: 164 order: 12 }
-{ group: 165 order: 12 }
-{ group: 166 order: 36 }
-{ group: 167 order: 36 }
-{ group: 168 order: 6 }
-{ group: 169 order: 6 }
-{ group: 170 order: 6 }
-{ group: 171 order: 6 }
-{ group: 172 order: 6 }
-{ group: 173 order: 6 }
-{ group: 174 order: 6 }
-{ group: 175 order: 12 }
-{ group: 176 order: 12 }
-{ group: 177 order: 12 }
-{ group: 178 order: 12 }
-{ group: 179 order: 12 }
-{ group: 180 order: 12 }
-{ group: 181 order: 12 }
-{ group: 182 order: 12 }
-{ group: 183 order: 12 }
-{ group: 184 order: 12 }
-{ group: 185 order: 12 }
-{ group: 186 order: 12 }
-{ group: 187 order: 12 }
-{ group: 188 order: 12 }
-{ group: 189 order: 12 }
-{ group: 190 order: 12 }
-{ group: 191 order: 24 }
-{ group: 192 order: 24 }
-{ group: 193 order: 24 }
-{ group: 194 order: 24 }
-{ group: 195 order: 12 }
-{ group: 196 order: 48 }
-{ group: 197 order: 24 }
-{ group: 198 order: 12 }
-{ group: 199 order: 24 }
-{ group: 200 order: 24 }
-{ group: 201 order: 24 }
-{ group: 202 order: 96 }
-{ group: 203 order: 96 }
-{ group: 204 order: 48 }
-{ group: 205 order: 24 }
-{ group: 206 order: 48 }
-{ group: 207 order: 24 }
-{ group: 208 order: 24 }
-{ group: 209 order: 96 }
-{ group: 210 order: 96 }
-{ group: 211 order: 48 }
-{ group: 212 order: 24 }
-{ group: 213 order: 24 }
-{ group: 214 order: 48 }
-{ group: 215 order: 24 }
-{ group: 216 order: 96 }
-{ group: 217 order: 48 }
-{ group: 218 order: 24 }
-{ group: 219 order: 96 }
-{ group: 220 order: 48 }
-{ group: 221 order: 48 }
-{ group: 222 order: 48 }
-{ group: 223 order: 48 }
-{ group: 224 order: 48 }
-{ group: 225 order: 192 }
-{ group: 226 order: 192 }
-{ group: 227 order: 192 }
-{ group: 228 order: 192 }
-{ group: 229 order: 96 }
-{ group: 230 order: 96 }
+{
+   "number": 1,
+   "order": 1 ,
+   "schoenflies": "C1^1",
+   "hm": "P1",
+   "pointGroup": "1"
+},
+{
+   "number": 2,
+   "order": 2 ,
+   "schoenflies": "Ci^1",
+   "hm": "P-1",
+   "pointGroup": "-1"
+},
+{
+   "number": 3,
+   "order": 2 ,
+   "schoenflies": "C2^1",
+   "hm": "P2:b",
+   "pointGroup": "2"
+},
+{
+   "number": 4,
+   "order": 2 ,
+   "schoenflies": "C2^2",
+   "hm": "P21:b",
+   "pointGroup": "2"
+},
+{
+   "number": 5,
+   "order": 4 ,
+   "schoenflies": "C2^3",
+   "hm": "C2:b1",
+   "pointGroup": "2"
+},
+{
+   "number": 6,
+   "order": 2 ,
+   "schoenflies": "Cs^1",
+   "hm": "Pm:b",
+   "pointGroup": "m"
+},
+{
+   "number": 7,
+   "order": 2 ,
+   "schoenflies": "Cs^2",
+   "hm": "Pc:b1",
+   "pointGroup": "m"
+},
+{
+   "number": 8,
+   "order": 4 ,
+   "schoenflies": "Cs^3",
+   "hm": "Cm:b1",
+   "pointGroup": "m"
+},
+{
+   "number": 9,
+   "order": 4 ,
+   "schoenflies": "Cs^4",
+   "hm": "Cc:b1",
+   "pointGroup": "m"
+},
+{
+   "number": 10,
+   "order": 4 ,
+   "schoenflies": "C2h^1",
+   "hm": "P2/m:b",
+   "pointGroup": "2/m"
+},
+{
+   "number": 11,
+   "order": 4 ,
+   "schoenflies": "C2h^2",
+   "hm": "P21/m:b",
+   "pointGroup": "2/m"
+},
+{
+   "number": 12,
+   "order": 8 ,
+   "schoenflies": "C2h^3",
+   "hm": "C2/m:b1",
+   "pointGroup": "2/m"
+},
+{
+   "number": 13,
+   "order": 4 ,
+   "schoenflies": "C2h^4",
+   "hm": "P2/c:b1",
+   "pointGroup": "2/m"
+},
+{
+   "number": 14,
+   "order": 4 ,
+   "schoenflies": "C2h^5",
+   "hm": "P21/c:b1",
+   "pointGroup": "2/m"
+},
+{
+   "number": 15,
+   "order": 8 ,
+   "schoenflies": "C2h^6",
+   "hm": "C2/c:b1",
+   "pointGroup": "2/m"
+},
+{
+   "number": 16,
+   "order": 4 ,
+   "schoenflies": "D2^1",
+   "hm": "P222",
+   "pointGroup": "222"
+},
+{
+   "number": 17,
+   "order": 4 ,
+   "schoenflies": "D2^2",
+   "hm": "P2221",
+   "pointGroup": "222"
+},
+{
+   "number": 18,
+   "order": 4 ,
+   "schoenflies": "D2^3",
+   "hm": "P21212",
+   "pointGroup": "222"
+},
+{
+   "number": 19,
+   "order": 4 ,
+   "schoenflies": "D2^4",
+   "hm": "P212121",
+   "pointGroup": "222"
+},
+{
+   "number": 20,
+   "order": 8 ,
+   "schoenflies": "D2^5",
+   "hm": "C2221",
+   "pointGroup": "222"
+},
+{
+   "number": 21,
+   "order": 8 ,
+   "schoenflies": "D2^6",
+   "hm": "C222",
+   "pointGroup": "222"
+},
+{
+   "number": 22,
+   "order": 16 ,
+   "schoenflies": "D2^7",
+   "hm": "F222",
+   "pointGroup": "222"
+},
+{
+   "number": 23,
+   "order": 8 ,
+   "schoenflies": "D2^8",
+   "hm": "I222",
+   "pointGroup": "222"
+},
+{
+   "number": 24,
+   "order": 8 ,
+   "schoenflies": "D2^9",
+   "hm": "I212121",
+   "pointGroup": "222"
+},
+{
+   "number": 25,
+   "order": 4 ,
+   "schoenflies": "C2v^1",
+   "hm": "Pmm2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 26,
+   "order": 4 ,
+   "schoenflies": "C2v^2",
+   "hm": "Pmc21",
+   "pointGroup": "mm2"
+},
+{
+   "number": 27,
+   "order": 4 ,
+   "schoenflies": "C2v^3",
+   "hm": "Pcc2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 28,
+   "order": 4 ,
+   "schoenflies": "C2v^4",
+   "hm": "Pma2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 29,
+   "order": 4 ,
+   "schoenflies": "C2v^5",
+   "hm": "Pca21",
+   "pointGroup": "mm2"
+},
+{
+   "number": 30,
+   "order": 4 ,
+   "schoenflies": "C2v^6",
+   "hm": "Pnc2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 31,
+   "order": 4 ,
+   "schoenflies": "C2v^7",
+   "hm": "Pmn21",
+   "pointGroup": "mm2"
+},
+{
+   "number": 32,
+   "order": 4 ,
+   "schoenflies": "C2v^8",
+   "hm": "Pba2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 33,
+   "order": 4 ,
+   "schoenflies": "C2v^9",
+   "hm": "Pna21",
+   "pointGroup": "mm2"
+},
+{
+   "number": 34,
+   "order": 4 ,
+   "schoenflies": "C2v^10",
+   "hm": "Pnn2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 35,
+   "order": 8 ,
+   "schoenflies": "C2v^11",
+   "hm": "Cmm2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 36,
+   "order": 8 ,
+   "schoenflies": "C2v^12",
+   "hm": "Cmc21",
+   "pointGroup": "mm2"
+},
+{
+   "number": 37,
+   "order": 8 ,
+   "schoenflies": "C2v^13",
+   "hm": "Ccc2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 38,
+   "order": 8 ,
+   "schoenflies": "C2v^14",
+   "hm": "Amm2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 39,
+   "order": 8 ,
+   "schoenflies": "C2v^15",
+   "hm": "Abm2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 40,
+   "order": 8 ,
+   "schoenflies": "C2v^16",
+   "hm": "Ama2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 41,
+   "order": 8 ,
+   "schoenflies": "C2v^17",
+   "hm": "Aba2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 42,
+   "order": 16 ,
+   "schoenflies": "C2v^18",
+   "hm": "Fmm2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 43,
+   "order": 16 ,
+   "schoenflies": "C2v^19",
+   "hm": "Fdd2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 44,
+   "order": 8 ,
+   "schoenflies": "C2v^20",
+   "hm": "Imm2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 45,
+   "order": 8 ,
+   "schoenflies": "C2v^21",
+   "hm": "Iba2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 46,
+   "order": 8 ,
+   "schoenflies": "C2v^22",
+   "hm": "Ima2",
+   "pointGroup": "mm2"
+},
+{
+   "number": 47,
+   "order": 8 ,
+   "schoenflies": "D2h^1",
+   "hm": "Pmmm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 48,
+   "order": 8 ,
+   "schoenflies": "D2h^2",
+   "hm": "Pnnn:1",
+   "pointGroup": "mmm"
+},
+{
+   "number": 49,
+   "order": 8 ,
+   "schoenflies": "D2h^3",
+   "hm": "Pccm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 50,
+   "order": 8 ,
+   "schoenflies": "D2h^4",
+   "hm": "Pban:1",
+   "pointGroup": "mmm"
+},
+{
+   "number": 51,
+   "order": 8 ,
+   "schoenflies": "D2h^5",
+   "hm": "Pmma",
+   "pointGroup": "mmm"
+},
+{
+   "number": 52,
+   "order": 8 ,
+   "schoenflies": "D2h^6",
+   "hm": "Pnna",
+   "pointGroup": "mmm"
+},
+{
+   "number": 53,
+   "order": 8 ,
+   "schoenflies": "D2h^7",
+   "hm": "Pmna",
+   "pointGroup": "mmm"
+},
+{
+   "number": 54,
+   "order": 8 ,
+   "schoenflies": "D2h^8",
+   "hm": "Pcca",
+   "pointGroup": "mmm"
+},
+{
+   "number": 55,
+   "order": 8 ,
+   "schoenflies": "D2h^9",
+   "hm": "Pbam",
+   "pointGroup": "mmm"
+},
+{
+   "number": 56,
+   "order": 8 ,
+   "schoenflies": "D2h^10",
+   "hm": "Pccn",
+   "pointGroup": "mmm"
+},
+{
+   "number": 57,
+   "order": 8 ,
+   "schoenflies": "D2h^11",
+   "hm": "Pbcm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 58,
+   "order": 8 ,
+   "schoenflies": "D2h^12",
+   "hm": "Pnnm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 59,
+   "order": 8 ,
+   "schoenflies": "D2h^13",
+   "hm": "Pmmn:1",
+   "pointGroup": "mmm"
+},
+{
+   "number": 60,
+   "order": 8 ,
+   "schoenflies": "D2h^14",
+   "hm": "Pbcn",
+   "pointGroup": "mmm"
+},
+{
+   "number": 61,
+   "order": 8 ,
+   "schoenflies": "D2h^15",
+   "hm": "Pbca",
+   "pointGroup": "mmm"
+},
+{
+   "number": 62,
+   "order": 8 ,
+   "schoenflies": "D2h^16",
+   "hm": "Pnma",
+   "pointGroup": "mmm"
+},
+{
+   "number": 63,
+   "order": 16 ,
+   "schoenflies": "D2h^17",
+   "hm": "Cmcm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 64,
+   "order": 16 ,
+   "schoenflies": "D2h^18",
+   "hm": "Cmca",
+   "pointGroup": "mmm"
+},
+{
+   "number": 65,
+   "order": 16 ,
+   "schoenflies": "D2h^19",
+   "hm": "Cmmm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 66,
+   "order": 16 ,
+   "schoenflies": "D2h^20",
+   "hm": "Cccm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 67,
+   "order": 16 ,
+   "schoenflies": "D2h^21",
+   "hm": "Cmma",
+   "pointGroup": "mmm"
+},
+{
+   "number": 68,
+   "order": 16 ,
+   "schoenflies": "D2h^22",
+   "hm": "Ccca:1",
+   "pointGroup": "mmm"
+},
+{
+   "number": 69,
+   "order": 32 ,
+   "schoenflies": "D2h^23",
+   "hm": "Fmmm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 70,
+   "order": 32 ,
+   "schoenflies": "D2h^24",
+   "hm": "Fddd:1",
+   "pointGroup": "mmm"
+},
+{
+   "number": 71,
+   "order": 16 ,
+   "schoenflies": "D2h^25",
+   "hm": "Immm",
+   "pointGroup": "mmm"
+},
+{
+   "number": 72,
+   "order": 16 ,
+   "schoenflies": "D2h^26",
+   "hm": "Ibam",
+   "pointGroup": "mmm"
+},
+{
+   "number": 73,
+   "order": 16 ,
+   "schoenflies": "D2h^27",
+   "hm": "Ibca",
+   "pointGroup": "mmm"
+},
+{
+   "number": 74,
+   "order": 16 ,
+   "schoenflies": "D2h^28",
+   "hm": "Imma",
+   "pointGroup": "mmm"
+},
+{
+   "number": 75,
+   "order": 4 ,
+   "schoenflies": "C4^1",
+   "hm": "P4",
+   "pointGroup": "4"
+},
+{
+   "number": 76,
+   "order": 4 ,
+   "schoenflies": "C4^2",
+   "hm": "P41",
+   "pointGroup": "4"
+},
+{
+   "number": 77,
+   "order": 4 ,
+   "schoenflies": "C4^3",
+   "hm": "P42",
+   "pointGroup": "4"
+},
+{
+   "number": 78,
+   "order": 4 ,
+   "schoenflies": "C4^4",
+   "hm": "P43",
+   "pointGroup": "4"
+},
+{
+   "number": 79,
+   "order": 8 ,
+   "schoenflies": "C4^5",
+   "hm": "I4",
+   "pointGroup": "4"
+},
+{
+   "number": 80,
+   "order": 8 ,
+   "schoenflies": "C4^6",
+   "hm": "I41",
+   "pointGroup": "4"
+},
+{
+   "number": 81,
+   "order": 4 ,
+   "schoenflies": "S4^1",
+   "hm": "P-4",
+   "pointGroup": "-4"
+},
+{
+   "number": 82,
+   "order": 8 ,
+   "schoenflies": "S4^2",
+   "hm": "I-4",
+   "pointGroup": "-4"
+},
+{
+   "number": 83,
+   "order": 8 ,
+   "schoenflies": "C4h^1",
+   "hm": "P4/m",
+   "pointGroup": "4/m"
+},
+{
+   "number": 84,
+   "order": 8 ,
+   "schoenflies": "C4h^2",
+   "hm": "P42/m",
+   "pointGroup": "4/m"
+},
+{
+   "number": 85,
+   "order": 8 ,
+   "schoenflies": "C4h^3",
+   "hm": "P4/n:1",
+   "pointGroup": "4/m"
+},
+{
+   "number": 86,
+   "order": 8 ,
+   "schoenflies": "C4h^4",
+   "hm": "P42/n:1",
+   "pointGroup": "4/m"
+},
+{
+   "number": 87,
+   "order": 16 ,
+   "schoenflies": "C4h^5",
+   "hm": "I4/m",
+   "pointGroup": "4/m"
+},
+{
+   "number": 88,
+   "order": 16 ,
+   "schoenflies": "C4h^6",
+   "hm": "I41/a:1",
+   "pointGroup": "4/m"
+},
+{
+   "number": 89,
+   "order": 8 ,
+   "schoenflies": "D4^1",
+   "hm": "P422",
+   "pointGroup": "422"
+},
+{
+   "number": 90,
+   "order": 8 ,
+   "schoenflies": "D4^2",
+   "hm": "P4212",
+   "pointGroup": "422"
+},
+{
+   "number": 91,
+   "order": 8 ,
+   "schoenflies": "D4^3",
+   "hm": "P4122",
+   "pointGroup": "422"
+},
+{
+   "number": 92,
+   "order": 8 ,
+   "schoenflies": "D4^4",
+   "hm": "P41212",
+   "pointGroup": "422"
+},
+{
+   "number": 93,
+   "order": 8 ,
+   "schoenflies": "D4^5",
+   "hm": "P4222",
+   "pointGroup": "422"
+},
+{
+   "number": 94,
+   "order": 8 ,
+   "schoenflies": "D4^6",
+   "hm": "P42212",
+   "pointGroup": "422"
+},
+{
+   "number": 95,
+   "order": 8 ,
+   "schoenflies": "D4^7",
+   "hm": "P4322",
+   "pointGroup": "422"
+},
+{
+   "number": 96,
+   "order": 8 ,
+   "schoenflies": "D4^8",
+   "hm": "P43212",
+   "pointGroup": "422"
+},
+{
+   "number": 97,
+   "order": 16 ,
+   "schoenflies": "D4^9",
+   "hm": "I422",
+   "pointGroup": "422"
+},
+{
+   "number": 98,
+   "order": 16 ,
+   "schoenflies": "D4^10",
+   "hm": "I4122",
+   "pointGroup": "422"
+},
+{
+   "number": 99,
+   "order": 8 ,
+   "schoenflies": "C4v^1",
+   "hm": "P4mm",
+   "pointGroup": "4mm"
+},
+{
+   "number": 100,
+   "order": 8 ,
+   "schoenflies": "C4v^2",
+   "hm": "P4bm",
+   "pointGroup": "4mm"
+},
+{
+   "number": 101,
+   "order": 8 ,
+   "schoenflies": "C4v^3",
+   "hm": "P42cm",
+   "pointGroup": "4mm"
+},
+{
+   "number": 102,
+   "order": 8 ,
+   "schoenflies": "C4v^4",
+   "hm": "P42nm",
+   "pointGroup": "4mm"
+},
+{
+   "number": 103,
+   "order": 8 ,
+   "schoenflies": "C4v^5",
+   "hm": "P4cc",
+   "pointGroup": "4mm"
+},
+{
+   "number": 104,
+   "order": 8 ,
+   "schoenflies": "C4v^6",
+   "hm": "P4nc",
+   "pointGroup": "4mm"
+},
+{
+   "number": 105,
+   "order": 8 ,
+   "schoenflies": "C4v^7",
+   "hm": "P42mc",
+   "pointGroup": "4mm"
+},
+{
+   "number": 106,
+   "order": 8 ,
+   "schoenflies": "C4v^8",
+   "hm": "P42bc",
+   "pointGroup": "4mm"
+},
+{
+   "number": 107,
+   "order": 16 ,
+   "schoenflies": "C4v^9",
+   "hm": "I4mm",
+   "pointGroup": "4mm"
+},
+{
+   "number": 108,
+   "order": 16 ,
+   "schoenflies": "C4v^10",
+   "hm": "I4cm",
+   "pointGroup": "4mm"
+},
+{
+   "number": 109,
+   "order": 16 ,
+   "schoenflies": "C4v^11",
+   "hm": "I41md",
+   "pointGroup": "4mm"
+},
+{
+   "number": 110,
+   "order": 16 ,
+   "schoenflies": "C4v^12",
+   "hm": "I41cd",
+   "pointGroup": "4mm"
+},
+{
+   "number": 111,
+   "order": 8 ,
+   "schoenflies": "D2d^1",
+   "hm": "P-42m",
+   "pointGroup": "-42m"
+},
+{
+   "number": 112,
+   "order": 8 ,
+   "schoenflies": "D2d^2",
+   "hm": "P-42c",
+   "pointGroup": "-42m"
+},
+{
+   "number": 113,
+   "order": 8 ,
+   "schoenflies": "D2d^3",
+   "hm": "P-421m",
+   "pointGroup": "-42m"
+},
+{
+   "number": 114,
+   "order": 8 ,
+   "schoenflies": "D2d^4",
+   "hm": "P-421c",
+   "pointGroup": "-42m"
+},
+{
+   "number": 115,
+   "order": 8 ,
+   "schoenflies": "D2d^5",
+   "hm": "P-4m2",
+   "pointGroup": "-4m2"
+},
+{
+   "number": 116,
+   "order": 8 ,
+   "schoenflies": "D2d^6",
+   "hm": "P-4c2",
+   "pointGroup": "-4m2"
+},
+{
+   "number": 117,
+   "order": 8 ,
+   "schoenflies": "D2d^7",
+   "hm": "P-4b2",
+   "pointGroup": "-4m2"
+},
+{
+   "number": 118,
+   "order": 8 ,
+   "schoenflies": "D2d^8",
+   "hm": "P-4n2",
+   "pointGroup": "-4m2"
+},
+{
+   "number": 119,
+   "order": 16 ,
+   "schoenflies": "D2d^9",
+   "hm": "I-4m2",
+   "pointGroup": "-4m2"
+},
+{
+   "number": 120,
+   "order": 16 ,
+   "schoenflies": "D2d^10",
+   "hm": "I-4c2",
+   "pointGroup": "-4m2"
+},
+{
+   "number": 121,
+   "order": 16 ,
+   "schoenflies": "D2d^11",
+   "hm": "I-42m",
+   "pointGroup": "-42m"
+},
+{
+   "number": 122,
+   "order": 16 ,
+   "schoenflies": "D2d^12",
+   "hm": "I-42d",
+   "pointGroup": "-42m"
+},
+{
+   "number": 123,
+   "order": 16 ,
+   "schoenflies": "D4h^1",
+   "hm": "P4/mmm",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 124,
+   "order": 16 ,
+   "schoenflies": "D4h^2",
+   "hm": "P4/mcc",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 125,
+   "order": 16 ,
+   "schoenflies": "D4h^3",
+   "hm": "P4/nbm:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 126,
+   "order": 16 ,
+   "schoenflies": "D4h^4",
+   "hm": "P4/nnc:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 127,
+   "order": 16 ,
+   "schoenflies": "D4h^5",
+   "hm": "P4/mbm",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 128,
+   "order": 16 ,
+   "schoenflies": "D4h^6",
+   "hm": "P4/mnc",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 129,
+   "order": 16 ,
+   "schoenflies": "D4h^7",
+   "hm": "P4/nmm:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 130,
+   "order": 16 ,
+   "schoenflies": "D4h^8",
+   "hm": "P4/ncc:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 131,
+   "order": 16 ,
+   "schoenflies": "D4h^9",
+   "hm": "P42/mmc",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 132,
+   "order": 16 ,
+   "schoenflies": "D4h^10",
+   "hm": "P42/mcm",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 133,
+   "order": 16 ,
+   "schoenflies": "D4h^11",
+   "hm": "P42/nbc:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 134,
+   "order": 16 ,
+   "schoenflies": "D4h^12",
+   "hm": "P42/nnm:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 135,
+   "order": 16 ,
+   "schoenflies": "D4h^13",
+   "hm": "P42/mbc",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 136,
+   "order": 16 ,
+   "schoenflies": "D4h^14",
+   "hm": "P42/mnm",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 137,
+   "order": 16 ,
+   "schoenflies": "D4h^15",
+   "hm": "P42/nmc:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 138,
+   "order": 16 ,
+   "schoenflies": "D4h^16",
+   "hm": "P42/ncm:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 139,
+   "order": 32 ,
+   "schoenflies": "D4h^17",
+   "hm": "I4/mmm",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 140,
+   "order": 32 ,
+   "schoenflies": "D4h^18",
+   "hm": "I4/mcm",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 141,
+   "order": 32 ,
+   "schoenflies": "D4h^19",
+   "hm": "I41/amd:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 142,
+   "order": 32 ,
+   "schoenflies": "D4h^20",
+   "hm": "I41/acd:1",
+   "pointGroup": "4/mmm"
+},
+{
+   "number": 143,
+   "order": 3 ,
+   "schoenflies": "C3^1",
+   "hm": "P3",
+   "pointGroup": "3"
+},
+{
+   "number": 144,
+   "order": 3 ,
+   "schoenflies": "C3^2",
+   "hm": "P31",
+   "pointGroup": "3"
+},
+{
+   "number": 145,
+   "order": 3 ,
+   "schoenflies": "C3^3",
+   "hm": "P32",
+   "pointGroup": "3"
+},
+{
+   "number": 146,
+   "order": 9 ,
+   "schoenflies": "C3^4",
+   "hm": "R3:H",
+   "pointGroup": "3"
+},
+{
+   "number": 147,
+   "order": 6 ,
+   "schoenflies": "C3i^1",
+   "hm": "P-3",
+   "pointGroup": "-3"
+},
+{
+   "number": 148,
+   "order": 18 ,
+   "schoenflies": "C3i^2",
+   "hm": "R-3:H",
+   "pointGroup": "-3"
+},
+{
+   "number": 149,
+   "order": 6 ,
+   "schoenflies": "D3^1",
+   "hm": "P312",
+   "pointGroup": "312"
+},
+{
+   "number": 150,
+   "order": 6 ,
+   "schoenflies": "D3^2",
+   "hm": "P321",
+   "pointGroup": "321"
+},
+{
+   "number": 151,
+   "order": 6 ,
+   "schoenflies": "D3^3",
+   "hm": "P3112",
+   "pointGroup": "312"
+},
+{
+   "number": 152,
+   "order": 6 ,
+   "schoenflies": "D3^4",
+   "hm": "P3121",
+   "pointGroup": "321"
+},
+{
+   "number": 153,
+   "order": 6 ,
+   "schoenflies": "D3^5",
+   "hm": "P3212",
+   "pointGroup": "312"
+},
+{
+   "number": 154,
+   "order": 6 ,
+   "schoenflies": "D3^6",
+   "hm": "P3221",
+   "pointGroup": "321"
+},
+{
+   "number": 155,
+   "order": 18 ,
+   "schoenflies": "D3^7",
+   "hm": "R32:H",
+   "pointGroup": "321"
+},
+{
+   "number": 156,
+   "order": 6 ,
+   "schoenflies": "C3v^1",
+   "hm": "P3m1",
+   "pointGroup": "3m1"
+},
+{
+   "number": 157,
+   "order": 6 ,
+   "schoenflies": "C3v^2",
+   "hm": "P31m",
+   "pointGroup": "31m"
+},
+{
+   "number": 158,
+   "order": 6 ,
+   "schoenflies": "C3v^3",
+   "hm": "P3c1",
+   "pointGroup": "3m1"
+},
+{
+   "number": 159,
+   "order": 6 ,
+   "schoenflies": "C3v^4",
+   "hm": "P31c",
+   "pointGroup": "31m"
+},
+{
+   "number": 160,
+   "order": 18 ,
+   "schoenflies": "C3v^5",
+   "hm": "R3m:H",
+   "pointGroup": "3m1"
+},
+{
+   "number": 161,
+   "order": 18 ,
+   "schoenflies": "C3v^6",
+   "hm": "R3c:H",
+   "pointGroup": "3m1"
+},
+{
+   "number": 162,
+   "order": 12 ,
+   "schoenflies": "D3d^1",
+   "hm": "P-31m",
+   "pointGroup": "-31m"
+},
+{
+   "number": 163,
+   "order": 12 ,
+   "schoenflies": "D3d^2",
+   "hm": "P-31c",
+   "pointGroup": "-31m"
+},
+{
+   "number": 164,
+   "order": 12 ,
+   "schoenflies": "D3d^3",
+   "hm": "P-3m1",
+   "pointGroup": "-3m1"
+},
+{
+   "number": 165,
+   "order": 12 ,
+   "schoenflies": "D3d^4",
+   "hm": "P-3c1",
+   "pointGroup": "-3m1"
+},
+{
+   "number": 166,
+   "order": 36 ,
+   "schoenflies": "D3d^5",
+   "hm": "R-3m:H",
+   "pointGroup": "-3m1"
+},
+{
+   "number": 167,
+   "order": 36 ,
+   "schoenflies": "D3d^6",
+   "hm": "R-3c:H",
+   "pointGroup": "-3m1"
+},
+{
+   "number": 168,
+   "order": 6 ,
+   "schoenflies": "C6^1",
+   "hm": "P6",
+   "pointGroup": "6"
+},
+{
+   "number": 169,
+   "order": 6 ,
+   "schoenflies": "C6^2",
+   "hm": "P61",
+   "pointGroup": "6"
+},
+{
+   "number": 170,
+   "order": 6 ,
+   "schoenflies": "C6^3",
+   "hm": "P65",
+   "pointGroup": "6"
+},
+{
+   "number": 171,
+   "order": 6 ,
+   "schoenflies": "C6^4",
+   "hm": "P62",
+   "pointGroup": "6"
+},
+{
+   "number": 172,
+   "order": 6 ,
+   "schoenflies": "C6^5",
+   "hm": "P64",
+   "pointGroup": "6"
+},
+{
+   "number": 173,
+   "order": 6 ,
+   "schoenflies": "C6^6",
+   "hm": "P63",
+   "pointGroup": "6"
+},
+{
+   "number": 174,
+   "order": 6 ,
+   "schoenflies": "C3h^1",
+   "hm": "P-6",
+   "pointGroup": "-6"
+},
+{
+   "number": 175,
+   "order": 12 ,
+   "schoenflies": "C6h^1",
+   "hm": "P6/m",
+   "pointGroup": "6/m"
+},
+{
+   "number": 176,
+   "order": 12 ,
+   "schoenflies": "C6h^2",
+   "hm": "P63/m",
+   "pointGroup": "6/m"
+},
+{
+   "number": 177,
+   "order": 12 ,
+   "schoenflies": "D6^1",
+   "hm": "P622",
+   "pointGroup": "622"
+},
+{
+   "number": 178,
+   "order": 12 ,
+   "schoenflies": "D6^2",
+   "hm": "P6122",
+   "pointGroup": "622"
+},
+{
+   "number": 179,
+   "order": 12 ,
+   "schoenflies": "D6^3",
+   "hm": "P6522",
+   "pointGroup": "622"
+},
+{
+   "number": 180,
+   "order": 12 ,
+   "schoenflies": "D6^4",
+   "hm": "P6222",
+   "pointGroup": "622"
+},
+{
+   "number": 181,
+   "order": 12 ,
+   "schoenflies": "D6^5",
+   "hm": "P6422",
+   "pointGroup": "622"
+},
+{
+   "number": 182,
+   "order": 12 ,
+   "schoenflies": "D6^6",
+   "hm": "P6322",
+   "pointGroup": "622"
+},
+{
+   "number": 183,
+   "order": 12 ,
+   "schoenflies": "C6v^1",
+   "hm": "P6mm",
+   "pointGroup": "6mm"
+},
+{
+   "number": 184,
+   "order": 12 ,
+   "schoenflies": "C6v^2",
+   "hm": "P6cc",
+   "pointGroup": "6mm"
+},
+{
+   "number": 185,
+   "order": 12 ,
+   "schoenflies": "C6v^3",
+   "hm": "P63cm",
+   "pointGroup": "6mm"
+},
+{
+   "number": 186,
+   "order": 12 ,
+   "schoenflies": "C6v^4",
+   "hm": "P63mc",
+   "pointGroup": "6mm"
+},
+{
+   "number": 187,
+   "order": 12 ,
+   "schoenflies": "D3h^1",
+   "hm": "P-6m2",
+   "pointGroup": "-6m2"
+},
+{
+   "number": 188,
+   "order": 12 ,
+   "schoenflies": "D3h^2",
+   "hm": "P-6c2",
+   "pointGroup": "-6m2"
+},
+{
+   "number": 189,
+   "order": 12 ,
+   "schoenflies": "D3h^3",
+   "hm": "P-62m",
+   "pointGroup": "-62m"
+},
+{
+   "number": 190,
+   "order": 12 ,
+   "schoenflies": "D3h^4",
+   "hm": "P-62c",
+   "pointGroup": "-62m"
+},
+{
+   "number": 191,
+   "order": 24 ,
+   "schoenflies": "D6h^1",
+   "hm": "P6/mmm",
+   "pointGroup": "6/mmm"
+},
+{
+   "number": 192,
+   "order": 24 ,
+   "schoenflies": "D6h^2",
+   "hm": "P6/mcc",
+   "pointGroup": "6/mmm"
+},
+{
+   "number": 193,
+   "order": 24 ,
+   "schoenflies": "D6h^3",
+   "hm": "P63/mcm",
+   "pointGroup": "6/mmm"
+},
+{
+   "number": 194,
+   "order": 24 ,
+   "schoenflies": "D6h^4",
+   "hm": "P63/mmc",
+   "pointGroup": "6/mmm"
+},
+{
+   "number": 195,
+   "order": 12 ,
+   "schoenflies": "T^1",
+   "hm": "P23",
+   "pointGroup": "23"
+},
+{
+   "number": 196,
+   "order": 48 ,
+   "schoenflies": "T^2",
+   "hm": "F23",
+   "pointGroup": "23"
+},
+{
+   "number": 197,
+   "order": 24 ,
+   "schoenflies": "T^3",
+   "hm": "I23",
+   "pointGroup": "23"
+},
+{
+   "number": 198,
+   "order": 12 ,
+   "schoenflies": "T^4",
+   "hm": "P213",
+   "pointGroup": "23"
+},
+{
+   "number": 199,
+   "order": 24 ,
+   "schoenflies": "T^5",
+   "hm": "I213",
+   "pointGroup": "23"
+},
+{
+   "number": 200,
+   "order": 24 ,
+   "schoenflies": "Th^1",
+   "hm": "Pm-3",
+   "pointGroup": "m-3"
+},
+{
+   "number": 201,
+   "order": 24 ,
+   "schoenflies": "Th^2",
+   "hm": "Pn-3:1",
+   "pointGroup": "m-3"
+},
+{
+   "number": 202,
+   "order": 96 ,
+   "schoenflies": "Th^3",
+   "hm": "Fm-3",
+   "pointGroup": "m-3"
+},
+{
+   "number": 203,
+   "order": 96 ,
+   "schoenflies": "Th^4",
+   "hm": "Fd-3:1",
+   "pointGroup": "m-3"
+},
+{
+   "number": 204,
+   "order": 48 ,
+   "schoenflies": "Th^5",
+   "hm": "Im-3",
+   "pointGroup": "m-3"
+},
+{
+   "number": 205,
+   "order": 24 ,
+   "schoenflies": "Th^6",
+   "hm": "Pa-3",
+   "pointGroup": "m-3"
+},
+{
+   "number": 206,
+   "order": 48 ,
+   "schoenflies": "Th^7",
+   "hm": "Ia-3",
+   "pointGroup": "m-3"
+},
+{
+   "number": 207,
+   "order": 24 ,
+   "schoenflies": "O^1",
+   "hm": "P432",
+   "pointGroup": "432"
+},
+{
+   "number": 208,
+   "order": 24 ,
+   "schoenflies": "O^2",
+   "hm": "P4232",
+   "pointGroup": "432"
+},
+{
+   "number": 209,
+   "order": 96 ,
+   "schoenflies": "O^3",
+   "hm": "F432",
+   "pointGroup": "432"
+},
+{
+   "number": 210,
+   "order": 96 ,
+   "schoenflies": "O^4",
+   "hm": "F4132",
+   "pointGroup": "432"
+},
+{
+   "number": 211,
+   "order": 48 ,
+   "schoenflies": "O^5",
+   "hm": "I432",
+   "pointGroup": "432"
+},
+{
+   "number": 212,
+   "order": 24 ,
+   "schoenflies": "O^6",
+   "hm": "P4332",
+   "pointGroup": "432"
+},
+{
+   "number": 213,
+   "order": 24 ,
+   "schoenflies": "O^7",
+   "hm": "P4132",
+   "pointGroup": "432"
+},
+{
+   "number": 214,
+   "order": 48 ,
+   "schoenflies": "O^8",
+   "hm": "I4132",
+   "pointGroup": "432"
+},
+{
+   "number": 215,
+   "order": 24 ,
+   "schoenflies": "Td^1",
+   "hm": "P-43m",
+   "pointGroup": "-43m"
+},
+{
+   "number": 216,
+   "order": 96 ,
+   "schoenflies": "Td^2",
+   "hm": "F-43m",
+   "pointGroup": "-43m"
+},
+{
+   "number": 217,
+   "order": 48 ,
+   "schoenflies": "Td^3",
+   "hm": "I-43m",
+   "pointGroup": "-43m"
+},
+{
+   "number": 218,
+   "order": 24 ,
+   "schoenflies": "Td^4",
+   "hm": "P-43n",
+   "pointGroup": "-43m"
+},
+{
+   "number": 219,
+   "order": 96 ,
+   "schoenflies": "Td^5",
+   "hm": "F-43c",
+   "pointGroup": "-43m"
+},
+{
+   "number": 220,
+   "order": 48 ,
+   "schoenflies": "Td^6",
+   "hm": "I-43d",
+   "pointGroup": "-43m"
+},
+{
+   "number": 221,
+   "order": 48 ,
+   "schoenflies": "Oh^1",
+   "hm": "Pm-3m",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 222,
+   "order": 48 ,
+   "schoenflies": "Oh^2",
+   "hm": "Pn-3n:1",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 223,
+   "order": 48 ,
+   "schoenflies": "Oh^3",
+   "hm": "Pm-3n",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 224,
+   "order": 48 ,
+   "schoenflies": "Oh^4",
+   "hm": "Pn-3m:1",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 225,
+   "order": 192 ,
+   "schoenflies": "Oh^5",
+   "hm": "Fm-3m",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 226,
+   "order": 192 ,
+   "schoenflies": "Oh^6",
+   "hm": "Fm-3c",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 227,
+   "order": 192 ,
+   "schoenflies": "Oh^7",
+   "hm": "Fd-3m:1",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 228,
+   "order": 192 ,
+   "schoenflies": "Oh^8",
+   "hm": "Fd-3c:1",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 229,
+   "order": 96 ,
+   "schoenflies": "Oh^9",
+   "hm": "Im-3m",
+   "pointGroup": "m-3m"
+},
+{
+   "number": 230,
+   "order": 96 ,
+   "schoenflies": "Oh^10",
+   "hm": "Ia-3d",
+   "pointGroup": "m-3m"
+}
 ]

@@ -5,7 +5,7 @@ case class MineralChemistry(name: String, formula: Formula)
 
 trait ChemistryComponent {
 
-    def mineralParser: Chemistry
+    val mineralParser: Chemistry
 
     trait Chemistry {
         def read: Iterable[MineralChemistry]
@@ -17,7 +17,7 @@ trait RealChemistryComponent extends ChemistryComponent {
 
     self: ConfigurationComponent =>
 
-    def mineralParser = new Chemistry with FormulaParser {
+    lazy val mineralParser = new Chemistry with FormulaParser {
 
         val mineral_name_simple = "[A-Z][a-z]+" r
 
@@ -47,7 +47,7 @@ trait RealChemistryComponent extends ChemistryComponent {
                 _.successful
             }.map {
                 _.get
-            }
+            }.toIterable
 
         }
 

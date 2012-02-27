@@ -1,7 +1,8 @@
 package minerals
 
 import io.Source
-import play.Play
+import play.api.Play
+import play.api.Play.current
 import java.io.File
 
 /**
@@ -14,9 +15,11 @@ import java.io.File
 
 trait ConfigurationComponent {
 
-    def configuration: Configuration
+    val configuration: Configuration
 
     trait Configuration {
+        
+        def groupSource: Source
         
         def formSource: Source
 
@@ -28,16 +31,21 @@ trait ConfigurationComponent {
 
 trait RealConfigurationComponent extends ConfigurationComponent {
 
-    val configuration = new Configuration {
+    lazy val configuration = new Configuration {
 
-        val chemistrySource = {
-            val chemFilename = Play.configuration.getProperty("chemistryFile")
+        lazy val chemistrySource = {
+            val chemFilename = Play.configuration.getString("chemistryFile").get
             Source.fromFile(new File(chemFilename))
         }
 
-        def formSource = {
-            val formFilename = Play.configuration.getProperty("formsFile")
+        lazy val formSource = {
+            val formFilename = Play.configuration.getString("formsFile").get
             Source.fromFile(new File(formFilename))
+        }
+        
+        lazy val groupSource = {
+            val groupFilename = Play.configuration.getString("groupsFile").get
+            Source.fromFile(new File(groupFilename))
         }
     }
 }
