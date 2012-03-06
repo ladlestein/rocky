@@ -1,16 +1,27 @@
 package controllers
 
-import play.api._
+import play.api.libs.json._
 import play.api.mvc._
 import play.api.templates._
 import minerals._
+import minerals.Implicits._
 
 object Application extends Controller {
 
     val minerals = (real db).minerals
 
     def index = Action {
-        Ok(views.html.index("Your new application is ready.", minerals.toSeq.sortWith(_.chemistry.formula.complexity < _.chemistry.formula.complexity)))
+        Ok(views.html.index(
+            "Your new application is ready.",
+            minerals.toSeq.sortWith(_.chemistry.formula.complexity < _.chemistry.formula.complexity)
+            ))
+    }
+
+
+    def data = Action {
+
+        Ok(Json.toJson(minerals filter {m => m.form.isDefined} toList))
+
     }
 
     def render(crystalForm: Option[MineralCrystalForm]) =

@@ -8,3 +8,4 @@ tmp
 *.iws
 *.iml
 .idea/
+test-result/

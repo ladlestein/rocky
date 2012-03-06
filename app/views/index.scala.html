@@ -1,7 +1,39 @@
 @(title:String, items: Seq[minerals.Mineral])
 
 @main(title) {
-    
+
+    <script src="/assets/javascripts/jquery.flot.js"></script>
+
+    <div id="placeholder" style="width: 800px; height: 400px;"></div>
+
+
+    <script id="source" language="javascript" type="text/javascript">
+        $(function () {
+            var options = {
+                grid: {
+                    hoverable: true,
+                    clickable: true,
+                    backgroundColor: { colors: ["#000", "#999"] }
+                },
+                series: {
+                    points: {show: true}
+                },
+                legend: { noColumns: 2, position: "ne" },
+                yaxis: { min: 0 , ticks: 25},
+                <!--xaxis: {}-->
+            };
+
+            var data = [];
+            var placeholder = $("#placeholder");
+            $.getJSON("/data", function(pairs){
+                $.each(pairs, function(index, mineral){
+                    data.push([mineral.complexity, mineral.order]);
+                });
+                $.plot(placeholder, [ { label: "complexity vs. space group order", data: data } ], options);
+            });
+        });
+    </script>
+
     <table>
         @for( mineral <- items) {
         <tr>
