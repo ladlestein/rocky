@@ -1,6 +1,10 @@
 package minerals
 
 import org.specs2.mutable._
+import com.nowanswers.chemistry._
+import com.nowanswers.chemistry.Formula
+import com.nowanswers.chemistry.Element
+import com.nowanswers.chemistry.QuantifiedTerm
 
 
 class FormulaParserSpec extends Specification {
@@ -11,46 +15,35 @@ class FormulaParserSpec extends Specification {
   def parseElement(element: String) = parser.parse(parser.element, element).get
 
   "The element list" should {
-      "not be null" in {
-          Elements.all must not beNull
-      }
-  }
-  
-  "The element list" should {
-      "contain an element with a single-character symbol" in {
-          Elements.all must contain (Element("O"))
-      }
-  }
-
-  "The element list" should {
-      "contain an element with a double-character symbol" in {
-          Elements.all must contain (Element("Fe"))
-      }
+    "not be null" in {
+      Elements.all must not beNull
+    }
+    "contain an element with a single-character symbol" in {
+      Elements.all must contain (Element("O"))
+    }
+    "contain an element with a double-character symbol" in {
+      Elements.all must contain (Element("Fe"))
+    }
+    "not contain an element that doesn't exist" in {
+      Elements.all must not contain (Element("X"))
+    }
   }
 
-  "The element list" should {
-      "not contain an element that doesn't exist" in {
-          Elements.all must not contain (Element("X"))
-      }
-  }
-  
   "An element parser" should {
-      "parse an element" in {
-          parseElement("Fe") must_== (Element("Fe"))
-      }
+    "parse an element" in {
+        parseElement("Fe") must_== (Element("Fe"))
+    }
   }
 
   "A formula parser" should {
-      "parse a single-element formula" in {
+    "parse a single-element formula" in {
           parseFormula("Fe") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("Fe"))))))
-      }
+    }
+    "parse a formula with a quantified element" in {
+      parseFormula("Fe_2_") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("Fe")), 2))))
+    }
   }
 
-  "A formula parser" should {
-      "parse a formula with a quantified element" in {
-          parseFormula("Fe_2_") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("Fe")), 2))))
-      }
-  }
   //   def test = {
   //
   //      def check[T](s: String, parser: => Parser[AnyRef], expect: AnyRef): AnyRef = {

@@ -1,5 +1,7 @@
 package minerals
 
+import com.nowanswers.chemistry.Formula
+
 
 case class MineralChemistry(name: String, formula: Formula)
 

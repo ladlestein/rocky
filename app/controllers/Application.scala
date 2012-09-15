@@ -5,6 +5,12 @@ import play.api.mvc._
 import play.api.templates._
 import minerals._
 import minerals.Implicits._
+import com.nowanswers.chemistry._
+import com.nowanswers.chemistry.Formula
+import com.nowanswers.chemistry.QuantifiedTerm
+import com.nowanswers.chemistry.ElementalTerm
+import minerals.MineralCrystalForm
+import scala.Some
 
 object Application extends Controller {
 

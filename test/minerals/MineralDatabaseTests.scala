@@ -4,6 +4,7 @@ import io.Source
 import org.specs2.mutable._
 import org.specs2.mock.Mockito
 import org.specs2.specification.Scope
+import com.nowanswers.chemistry.Formula
 
 /**
  * Created by IntelliJ IDEA.
