@@ -54,57 +54,57 @@ class MineralDatabaseTests extends Specification {
             ))
         }
     }
-
-    implicit def leftToString(l: Left): String = l.name
-    implicit def rightToString(r: Right): String = r.name
-    case class Left(name: String, size: Int)
-    case class Right(name: String, color: String)
-    case class Prod(name: String, size: Int, color: Option[String])
-    
-    val lefts = List(Left("bar", 5), Left("foo", 7), Left("zebra", 27))
-    val rights = List(Right("bar", "purple"), Right("zebra", "blue"), Right("zoo", "gray"))
-
-    "A collation of two things" should {
-        "work" in {
-            (lefts <=> rights) { (left, right) => {
-
-                Prod(left.name, left.size, right flatMap {r => Some(r.color)})
-
-            }} must_== List(("bar", "bar"))
-        }
-    }
-
-    final class Collation[L](val __leftOfCollate: Iterable[L]) {
-        @inline def <=>[R, K, P]
-        ( right: Iterable[R] )
-            ( combine: (L, Option[R]) => P )
-            ( implicit lToKey: L => K,  rToKey: R => K, order: Ordering[K] ) {
-            val r = right.iterator.buffered
-
-            val left = __leftOfCollate
-            left.map { l =>
-
-                val optionr: Option[R] = {
-                    while (r.hasNext && (order.lt(rToKey(r.head), lToKey(l)))) {
-                        r.next
-                    }
-
-                    if (r.hasNext && order.eq(rToKey(r.head), lToKey(l))) {
-                        Some(r.head)
-                    } else {
-                        None
-                    }
-                }
-                combine(l, optionr)
-
-            }
-        }
-
-        //        def â[R](y: R): Tuple2[L, R] = <=>(y)
-
-    }
-
-    implicit def any2Collation[A](x: Iterable[A]): Collation[A] = new Collation(x)
+//
+//    implicit def leftToString(l: Left): String = l.name
+//    implicit def rightToString(r: Right): String = r.name
+//    case class Left(name: String, size: Int)
+//    case class Right(name: String, color: String)
+//    case class Prod(name: String, size: Int, color: Option[String])
+//
+//    val lefts = List(Left("bar", 5), Left("foo", 7), Left("zebra", 27))
+//    val rights = List(Right("bar", "purple"), Right("zebra", "blue"), Right("zoo", "gray"))
+//
+//    "A collation of two things" should {
+//        "work" in {
+//            (lefts <=> rights) { (left, right) => {
+//
+//                Prod(left.name, left.size, right flatMap {r => Some(r.color)})
+//
+//            }} must_== List(("bar", "bar"))
+//        }
+//    }
+//
+//    final class Collation[L](val __leftOfCollate: Iterable[L]) {
+//        @inline def <=>[R, K, P]
+//        ( right: Iterable[R] )
+//            ( combine: (L, Option[R]) => P )
+//            ( implicit lToKey: L => K,  rToKey: R => K, order: Ordering[K] ) {
+//            val r = right.iterator.buffered
+//
+//            val left = __leftOfCollate
+//            left.map { l =>
+//
+//                val optionr: Option[R] = {
+//                    while (r.hasNext && (order.lt(rToKey(r.head), lToKey(l)))) {
+//                        r.next
+//                    }
+//
+//                    if (r.hasNext && order.eq(rToKey(r.head), lToKey(l))) {
+//                        Some(r.head)
+//                    } else {
+//                        None
+//                    }
+//                }
+//                combine(l, optionr)
+//
+//            }
+//        }
+//
+//        //        def â[R](y: R): Tuple2[L, R] = <=>(y)
+//
+//    }
+//
+//    implicit def any2Collation[A](x: Iterable[A]): Collation[A] = new Collation(x)
 
 }
 

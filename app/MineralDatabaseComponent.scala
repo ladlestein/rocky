@@ -24,7 +24,8 @@ object Implicits {
             val name: JsString = JsString(m.name)
             JsObject(List(
                 "complexity" -> complexity,
-                "order" -> order
+                "order" -> order,
+                "name" -> name
             ))
         }
     }
@@ -78,37 +79,37 @@ trait RealMineralDatabaseComponent extends MineralDatabaseComponent {
     }
 
 
-    final class Collation[L](val __leftOfCollate: Iterable[L]) {
-        @inline def <=>[R, K, P]
-            ( right: Iterable[R] )
-            ( combine: (L, Option[R]) => P )
-            ( implicit lToKey: L => K,  rToKey: R => K, order: Ordering[K] ) {
-            val r = right.iterator.buffered
-
-            val left = __leftOfCollate
-            left.map { l =>
-
-                val optionr: Option[R] = {
-                    while (r.hasNext && (order.lt(rToKey(r.head), lToKey(l)))) {
-                        r.next
-                    }
-
-                    if (r.hasNext && order.eq(rToKey(r.head), lToKey(l))) {
-                        Some(r.head)
-                    } else {
-                        None
-                    }
-                }
-                combine(l, optionr)
-
-            }
-        }
-
-//        def â[R](y: R): Tuple2[L, R] = <=>(y)
-        
-    }
-
-    implicit def any2Collation[A](x: Iterable[A]): Collation[A] = new Collation(x)
+//    final class Collation[L](val __leftOfCollate: Iterable[L]) {
+//        @inline def <=>[R, K, P]
+//            ( right: Iterable[R] )
+//            ( combine: (L, Option[R]) => P )
+//            ( implicit lToKey: L => K,  rToKey: R => K, order: Ordering[K] ) {
+//            val r = right.iterator.buffered
+//
+//            val left = __leftOfCollate
+//            left.map { l =>
+//
+//                val optionr: Option[R] = {
+//                    while (r.hasNext && (order.lt(rToKey(r.head), lToKey(l)))) {
+//                        r.next
+//                    }
+//
+//                    if (r.hasNext && order.eq(rToKey(r.head), lToKey(l))) {
+//                        Some(r.head)
+//                    } else {
+//                        None
+//                    }
+//                }
+//                combine(l, optionr)
+//
+//            }
+//        }
+//
+////        def â[R](y: R): Tuple2[L, R] = <=>(y)
+//
+//    }
+//
+//    implicit def any2Collation[A](x: Iterable[A]): Collation[A] = new Collation(x)
 
 }
 

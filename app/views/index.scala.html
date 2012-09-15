@@ -8,6 +8,21 @@
 
 
     <script id="source" language="javascript" type="text/javascript">
+
+        function showTooltip(x, y, contents) {
+            $('<div id="tooltip">' + contents + '</div>').css( {
+                position: 'absolute',
+                display: 'none',
+                top: y + 5,
+                left: x + 5,
+                border: '1px solid #fdd',
+                padding: '2px',
+                'background-color': '#fee',
+                opacity: 0.80
+            }).appendTo("body").fadeIn(200);
+        }
+
+
         $(function () {
             var options = {
                 grid: {
@@ -23,14 +38,41 @@
                 <!--xaxis: {}-->
             };
 
-            var data = [];
+            var points = [];
+            var minerals = [];
             var placeholder = $("#placeholder");
             $.getJSON("/data", function(pairs){
-                $.each(pairs, function(index, mineral){
-                    data.push([mineral.complexity, mineral.order]);
+                $.each(pairs, function(index, mineral) {
+                    points.push([mineral.complexity, mineral.order]);
+                    minerals.push(mineral);
                 });
-                $.plot(placeholder, [ { label: "complexity vs. space group order", data: data } ], options);
+                $.plot(placeholder, [ { label: "complexity vs. space group order", data: points } ], options);
             });
+
+            placeholder.bind("plothover", function (event, pos, item) {
+                $("#x").text(pos.x.toFixed(2));
+                $("#y").text(pos.y.toFixed(2));
+
+                if (item) {
+                    if (previousPoint != item.dataIndex) {
+                        previousPoint = item.dataIndex;
+
+                        $("#tooltip").remove();
+                        var x = item.datapoint[0].toFixed(2),
+                        y = item.datapoint[1].toFixed(2);
+
+                        mineral = minerals[item.dataIndex]
+
+                        showTooltip(item.pageX, item.pageY,
+                        item.series.label + " for " + mineral.name + " of " + x + " = " + y);
+                    }
+                } else {
+                    $("#tooltip").remove();
+                    previousPoint = null;
+                }
+            });
+
+
         });
     </script>
 
