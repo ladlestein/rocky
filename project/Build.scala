@@ -9,7 +9,7 @@ object ApplicationBuild extends Build {
 
     val appDependencies = Seq(
         "org.mockito" % "mockito-core" % "1.9.0",
-        "com.nowanswers" %% "chemistry" % "0.1.1"
+        "com.nowanswers" %% "chemistry" % "0.1.3"
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = SCALA).settings(

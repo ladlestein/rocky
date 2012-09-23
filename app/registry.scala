@@ -18,6 +18,7 @@ object real extends stuff
     with RealConfigurationComponent
     with RealCrystallographyComponent {
 
+  val mineralParser = new ChemistryFileParser with RRUFFFormulaParser
 }
 
 

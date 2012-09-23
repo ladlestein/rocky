@@ -54,7 +54,7 @@ object Application extends Controller {
         new Html(
             t match {
                 case t: ElementalTerm =>
-                    t.element.symbol + (t.oxidationNumber match {
+                    t.element.symbol + (t.charge match {
                         case Some(x) => oxyFormat(x)
                         case None => ""
                     })

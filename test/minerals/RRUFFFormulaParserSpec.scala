@@ -7,19 +7,23 @@ import com.nowanswers.chemistry.Element
 import com.nowanswers.chemistry.QuantifiedTerm
 
 
-class FormulaParserSpec extends Specification {
+class RRUFFFormulaParserSpec
+  extends Specification {
 
-  val parser = new FormulaParser {}
+  val parser: RRUFFFormulaParser with Object = new RRUFFFormulaParser {}
+  def parseFormula(formulaText: String) = parser.parse(parser.formula, formulaText).get
+  def parseElement(elementText: String) = parser.parse(parser.element, elementText).get
 
-  def parseFormula(formula: String) = parser.parse(parser.formula, formula).get
-  def parseElement(element: String) = parser.parse(parser.element, element).get
+
+  val oxygen = Element("O")
+  val hydrogen = Element("H")
 
   "The element list" should {
     "not be null" in {
       Elements.all must not beNull
     }
     "contain an element with a single-character symbol" in {
-      Elements.all must contain (Element("O"))
+      Elements.all must contain (oxygen)
     }
     "contain an element with a double-character symbol" in {
       Elements.all must contain (Element("Fe"))
@@ -31,18 +35,31 @@ class FormulaParserSpec extends Specification {
 
   "An element parser" should {
     "parse an element" in {
-        parseElement("Fe") must_== (Element("Fe"))
+      parseElement("Fe") must_== (Element("Fe"))
     }
   }
 
   "A formula parser" should {
     "parse a single-element formula" in {
-          parseFormula("Fe") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("Fe"))))))
+      parseFormula("Fe") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("Fe"))))))
     }
     "parse a formula with a quantified element" in {
       parseFormula("Fe_2_") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("Fe")), 2))))
     }
+    "parse a formula with an oxidation number" in {
+      parseFormula("Fe^3+^") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("Fe"), Option(3))))))
+    }
+    "parse a formula with a negative oxidation number" in {
+      parseFormula("Br^3-^") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("Br"), Option(-3))))))
+    }
+    "parse a formula with multiple terms" in {
+      parseFormula("OH") must_== (Formula(List(QuantifiedTerm(ElementalTerm(oxygen)), QuantifiedTerm(ElementalTerm(hydrogen)))))
+    }
+    "parse a formula with a functional group" in {
+      parseFormula("H(SO_4_)") must_== (Formula(List(QuantifiedTerm(ElementalTerm(Element("H"))), QuantifiedTerm(FunctionalGroup(List(QuantifiedTerm(ElementalTerm(Element("S"))), QuantifiedTerm(ElementalTerm(Element("O")), 4)))))))
+    }
   }
+
 
   //   def test = {
   //
